@@ -1,6 +1,6 @@
-FROM rust:1-buster
+FROM dhi.io/rust:1.95-debian13-sfw-dev
 
-WORKDIR /usr/src/hello-rust
+WORKDIR /usr/local/src/hello-rust
 COPY . .
 
 RUN cargo install --path .
