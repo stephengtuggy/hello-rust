@@ -4,6 +4,6 @@ WORKDIR /usr/local/src/hello-rust
 COPY . .
 
 RUN cargo install --path .
-RUN export PATH=$PATH:/root/.cargo/bin
+ENV PATH="/root/.cargo/bin:${PATH}"
 
 ENTRYPOINT ["hello-rust"]
