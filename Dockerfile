@@ -1,4 +1,4 @@
-FROM dhi.io/rust:1.95-debian13-sfw-dev
+FROM dhi.io/rust:1.98-debian13-sfw-dev
 
 WORKDIR /usr/local/src/hello-rust
 COPY . .
